@@ -1,0 +1,20 @@
+service > openVPN > sample_client >
+
+[*] enabled
+
+[save & apply]
+
+edit
+
+remote = $SERVER_ADDR
+
+[add] dev_type = tap
+[add] ca
+[add] cert
+[add] key
+
+[save & apply]
+
+overview >
+
+[start]

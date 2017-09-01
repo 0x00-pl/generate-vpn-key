@@ -2,3 +2,4 @@
 .*
 !.gitignore
 !generate.sh
+!openwrt-openvpn-init.txt
