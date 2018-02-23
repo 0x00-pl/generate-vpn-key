@@ -26,5 +26,5 @@ EOF
 mkdir -p ./${SERVER_ADDR}/
 sshpass -p ${SERVER_PASS} scp -o "${SSH_OPTION}" -P ${SERVER_PORT} ${SERVER}:/etc/openvpn/easy-rsa/keys/${FNAME}.crt ./${SERVER_ADDR}/
 sshpass -p ${SERVER_PASS} scp -o "${SSH_OPTION}" -P ${SERVER_PORT} ${SERVER}:/etc/openvpn/easy-rsa/keys/${FNAME}.key ./${SERVER_ADDR}/
-sshpass -p ${SERVER_PASS} scp -o "${SSH_OPYION}" -P ${SERVER_PORT} ${SERVER}:/etc/openvpn/ca.crt ./${SERVER_ADDR}/
+sshpass -p ${SERVER_PASS} scp -o "${SSH_OPTION}" -P ${SERVER_PORT} ${SERVER}:/etc/openvpn/server/ca.crt ./${SERVER_ADDR}/
 
